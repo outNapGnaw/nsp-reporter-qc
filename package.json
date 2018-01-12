@@ -1,0 +1,39 @@
+{
+  "name": "nsp-reporter-qc",
+  "version": "0.0.1",
+  "description": "Summary-style reporter for nsp (Node Security Project),Base on nsp table reporter",
+  "main": "src/reporter.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "nsp": "nsp check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:outNapGnaw/nsp-reporter-qc.git"
+  },
+  "keywords": [
+    "nodesecurity",
+    "nsp",
+    "reporter",
+    "qc"
+  ],
+  "author": {
+    "name": "outNapGnaw",
+    "email": "wptwwj@163.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/outNapGnaw/nsp-reporter-qc/issues"
+  },
+  "homepage": "https://github.com/outNapGnaw/nsp-reporter-qc/#readme",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "cli-table2": "^0.2.0",
+    "cvss": "^1.0.2",
+    "nsp": "^3.0.0",
+    "axios": "^0.17.1",
+    "rc": "^1.2.3"
+  }
+}
