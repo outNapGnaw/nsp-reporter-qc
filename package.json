@@ -1,6 +1,6 @@
 {
   "name": "nsp-reporter-qc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Summary-style reporter for nsp (Node Security Project),Base on nsp table reporter",
   "main": "src/reporter.js",
   "engines": {
