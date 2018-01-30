@@ -4,6 +4,7 @@ const Chalk = require('chalk');
 const Table = require('cli-table2');
 const Cvss = require('cvss');
 const axios = require('axios');
+const urlParse = require('url');
 const nspCfg = require('rc')('nsp', {});
 
 
@@ -16,7 +17,11 @@ const postData = function (url, params,callback) {
     console.error('==========post-nsp-Data-error==========')
     return false
   }
-  return axios.post(url, params)
+  axios.defaults.baseURL = urlParse.parse(url).protocol + '//'+urlParse.parse(url).host;
+  //删除packagelock
+  delete params.args.packagelock
+  
+  return axios.post(urlParse.parse(url).path, params)
     .then(res => {
       console.log('==========post-nsp-Data-success==========')
       if (callback){
