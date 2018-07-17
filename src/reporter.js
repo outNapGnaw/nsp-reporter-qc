@@ -1,7 +1,7 @@
 'use strict';
 
 const Chalk = require('chalk');
-const Table = require('cli-table2');
+const Table = require('cli-table3');
 const Cvss = require('cvss');
 const axios = require('axios');
 const urlParse = require('url');
